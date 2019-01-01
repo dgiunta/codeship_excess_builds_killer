@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dgiunta/codeship_api
-  revision: 59ea8761f2c2f737dc27b446fc8526f79833727d
+  revision: 29e2576a45e8ded8070107296c87f03d4fca036d
   specs:
     codeship_api (0.1.0)
       activesupport
