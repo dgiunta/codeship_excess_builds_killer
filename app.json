@@ -1,0 +1,19 @@
+{
+  "name": "Codeship Excess Build Killer",
+  "description": "Webhook server for receiving github webhooks in particular and killing any excess builds for the branch of the commit sent in the webhook",
+  "repository": "https://github.com/dgiunta/codeship_excess_builds_killer",
+  "env": {
+    "CODESHIP_API_USERNAME": {
+      "description": "Your username for signing into codeship"
+    },
+    "CODESHIP_API_PASSWORD": {
+      "description": "Your password for signing into codeship"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "image": "heroku/ruby"
+}
