@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/dgiunta/codeship_api
-  revision: 40af586d5f8e7009ba47fad9a09184b6a8bb68a7
+  revision: 59ea8761f2c2f737dc27b446fc8526f79833727d
   specs:
     codeship_api (0.1.0)
       activesupport
@@ -16,7 +16,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     concurrent-ruby (1.1.4)
-    i18n (1.3.0)
+    i18n (1.4.0)
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
     mustermann (1.0.3)
