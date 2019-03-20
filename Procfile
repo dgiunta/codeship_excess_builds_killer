@@ -1,1 +1,1 @@
-web: codeship_api webhook_server -p $PORT -s puma
+web: rackup -p $PORT -s puma -I ./lib ./config.ru
