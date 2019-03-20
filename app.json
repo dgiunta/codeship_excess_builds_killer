@@ -8,6 +8,10 @@
     },
     "CODESHIP_API_PASSWORD": {
       "description": "Your password for signing into codeship"
+    },
+    "IGNORE_MASTER": {
+      "description": "Set to true if you'd like to also kill excessive builds for the master branch",
+      "value": "false"
     }
   },
   "formation": {
