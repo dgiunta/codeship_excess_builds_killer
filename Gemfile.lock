@@ -1,17 +1,15 @@
 GIT
   remote: https://github.com/dgiunta/codeship_api
-  revision: 59e3f4521d65f1373ef6fef23ae60707b99ad335
+  revision: 8ee6513a2c0dae0424e635c033b4827cd4ad0fb9
   specs:
     codeship_api (0.1.1)
       activesupport
       pry
-      sinatra
-      sucker_punch
 
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.2.2.1)
+    activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -27,7 +25,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     puma (3.12.0)
-    rack (2.0.6)
+    rack (2.0.7)
     rack-protection (2.0.5)
       rack
     sinatra (2.0.5)
