@@ -1,6 +1,6 @@
 source :rubygems
 
-ruby '~> 2.4'
+ruby '~> 2.6'
 
 gem "barnes"
 gem 'puma'
