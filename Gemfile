@@ -2,6 +2,7 @@ source :rubygems
 
 ruby '~> 2.4'
 
+gem "barnes"
 gem 'puma'
 gem 'sinatra'
 gem 'sucker_punch'

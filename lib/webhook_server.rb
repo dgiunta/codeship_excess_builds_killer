@@ -1,5 +1,5 @@
 require 'codeship_api'
-require 'process_webhook_job'
+require_relative 'process_webhook_job'
 require 'sinatra/base'
 
 class WebhookServer < Sinatra::Base
