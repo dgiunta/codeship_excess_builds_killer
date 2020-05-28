@@ -20,7 +20,7 @@ class ProcessWebhookJob
 
     if project
       log "project=#{project.name} builds_to_stop=#{builds_to_stop.map(&:uuid).join(",")}"
-      builds_to_stop.each(&:stop)
+      builds_to_stop.each(&method(:stop))
     end
     log "end (#{Time.now - start})"
   end
@@ -37,6 +37,12 @@ class ProcessWebhookJob
 
   def builds_to_stop
     @builds_to_stop ||= project.builds.select(&method(:excessive_build?))
+  end
+
+  def stop(build)
+    start_time = Time.now
+    build.stop
+    puts "event#build.stop='#{build.uuid}' description='repo:#{repo_url},commit:#{commit_sha}' start_time=#{start_time.to_i} end_time=#{Time.now.to_i}"
   end
 
   def log(message="")

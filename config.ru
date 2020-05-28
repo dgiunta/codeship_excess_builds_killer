@@ -1,4 +1,3 @@
-
-require_relative './lib/webhook_server'
+require 'webhook_server'
 
 run WebhookServer
