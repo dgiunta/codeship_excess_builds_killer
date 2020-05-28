@@ -7,7 +7,7 @@ GIT
       pry
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (5.2.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -61,4 +61,4 @@ RUBY VERSION
    ruby 2.6.1p33
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
