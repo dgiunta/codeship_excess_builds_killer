@@ -9,8 +9,12 @@
     "CODESHIP_API_PASSWORD": {
       "description": "Your password for signing into codeship"
     },
-    "IGNORE_MASTER": {
-      "description": "Set to true if you'd like to also kill excessive builds for the master branch",
+    "PRIMARY_BRANCH_NAME": {
+      "value": "main",
+      "description": "The branch name you use as your primary branch (ie - main, primary, master)"
+    },
+    "IGNORE_PRIMARY_BRANCH": {
+      "description": "Set to true if you'd like to also kill excessive builds for the primary branch",
       "value": "false"
     }
   },

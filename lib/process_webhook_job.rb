@@ -10,8 +10,8 @@ class ProcessWebhookJob
   def perform(repo_url, ref, commit_sha)
     @repo_url, @ref, @commit_sha = repo_url, ref, commit_sha
 
-    if ignore_master? && ref.include?("master")
-      log "project=#{project.name} commit_sha=#{commit_sha} IGNORING MASTER COMMIT"
+    if ignore_primary_branch? && ref.include?(primary_branch_name)
+      log "project=#{project.name} commit_sha=#{commit_sha} IGNORING #{primary_branch_name} COMMIT"
       return
     end
 
@@ -27,8 +27,12 @@ class ProcessWebhookJob
 
   private
 
-  def ignore_master?
-    ENV['IGNORE_MASTER'].presence == 'true'
+  def primary_branch_name
+    ENV['PRIMARY_BRANCH_NAME']
+  end
+
+  def ignore_primary_branch?
+    ENV['IGNORE_PRIMARY_BRANCH'].presence == 'true'
   end
 
   def project
